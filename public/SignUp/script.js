@@ -6,7 +6,7 @@ const inputPassword = document.getElementById("input-password");
 
 const labelStatus = document.getElementById("label-status");
 
-const baseUrl = "http://35.154.127.252:3001/";
+const baseUrl = "http://35.154.127.252:3030/";
 
 formSignUp.onsubmit = async (event) => {
   labelStatus.textContent = "";

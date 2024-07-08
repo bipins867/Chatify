@@ -2,7 +2,7 @@ const inputEmail = document.getElementById("input-email");
 const inputPassword = document.getElementById("input-password");
 const labelStatus = document.getElementById("status-label");
 
-const baseUrl = "http://35.154.127.252:3001/";
+const baseUrl = "http://35.154.127.252:3030/";
 
 document
   .getElementById("form-login")
