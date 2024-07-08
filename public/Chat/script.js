@@ -24,7 +24,7 @@ const inputDatePicker = document.getElementById("datepicker");
 const myMessageClass = "message even";
 const otherMessageClass = "message odd";
 
-const baseUrl = "http://localhost:3001/";
+const baseUrl = "http://35.154.127.252:3001/";
 const OBJ = { firstTime: false, id2Get: -1 };
 
 function getTokenHeaders() {
