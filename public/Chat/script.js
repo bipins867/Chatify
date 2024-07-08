@@ -81,7 +81,7 @@ function saveChat2Local(chats) {
   var x = [localChat, chats];
 
   x = x.flat();
-  x = x.splice(x.length - 10);
+  x = x.splice(x.length - 100);
 
   localStorage.setItem("localChats", JSON.stringify(x));
   const lastChatIndex = x[x.length - 1].id;
@@ -129,7 +129,7 @@ async function onPageRefress(groupUID) {
   saveChat2Local(chatListData);
 
   for (const chat of chatListData) {
-    if (chatList.children.length >= 10) {
+    if (chatList.children.length >= 100) {
       chatList.removeChild(chatList.children[0]);
     }
     if (chat.userId == userId) {
@@ -441,7 +441,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
   //     onPageRefress();
 
-  //     setTimeout(myFunction,1000)
+  //     setTimeout(myFunction,10000)
 
   // }
 
